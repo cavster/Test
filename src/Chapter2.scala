@@ -13,4 +13,10 @@ object Chapter2 extends App {
     sum
   }
   println(computeUniCode("Hello"))
+  //carys example like p185
+  def signum(i: Int): Int = i match {
+    case n if n > 0 => 1
+    case n if n < 0 => -1
+    case _ => 0//anything else
+  }
 }
